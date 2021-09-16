@@ -1,0 +1,44 @@
+{
+  "name": "vivino",
+  "description": "frontend automation of vivino using webdriverio",
+  "scripts": {
+    "test": "wdio scripts/config/wdio.conf.selected.js --suite feature",
+    "webdriver-install": "node_modules/.bin/selenium-standalone install --config=./driverConfig/drivers.js",
+    "webdriver-start": "selenium-standalone start --config=./driverConfig/drivers.js"
+  },
+  "author": "Xavier",
+  "license": "ISC",
+  "dependencies": {
+    "archiver": "^3.1.1",
+    "babel-core": "^6.26.3",
+    "babel-plugin-add-module-exports": "^1.0.2",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "chai": "^4.2.0",
+    "cucumber": "^5.1.0",
+    "deepmerge": "^3.2.0",
+    "pngjs": "^6.0.0",
+    "prettier": "^1.16.4",
+    "request": "^2.88.0",
+    "require-dir": "^1.2.0",
+    "selenium-standalone": "^6.16.0",
+    "wd": "^1.11.1",
+    "wdio-cucumber-framework": "^2.2.8",
+    "wdio-html-advance-reporter": "^1.0.4",
+    "wdio-json-reporter": "^0.4.0",
+    "wdio-spec-reporter": "^0.1.5",
+    "webdriver": "^6.1.4",
+    "webdriverio": "^4.13.2"
+  },
+  "devDependencies": {
+    "wdio-appium-service": "^0.2.3"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ],
+    "plugins": [
+      "add-module-exports"
+    ]
+  }
+}
